@@ -2,6 +2,8 @@
 
 A simple, lightweight personal note-taking application built with Flask and SQLite - your own mini OneNote clone! Perfect for organizing thoughts, ideas, and knowledge without the complexity of JavaScript.
 
+**🔗 Live Demo:** [https://notes-for-me.onrender.com](https://notes-for-me.onrender.com)
+
 ## ✨ Features
 
 - **📝 Create Notes**: Add notes with titles, content, and tags
@@ -64,11 +66,12 @@ personal_knowledge_hub/
    http://127.0.0.1:5000
    ```
 
-That's it! Your Personal Knowledge Hub is now running locally.
+Your Personal Knowledge Hub is now running locally.
 
 ## 🎯 How to Use
 
 ### Adding Notes
+
 1. Click "Add Note" in the navigation
 2. Enter a title for your note
 3. Write your content in the text area
@@ -76,12 +79,14 @@ That's it! Your Personal Knowledge Hub is now running locally.
 5. Click "Save Note"
 
 ### Managing Notes
+
 - **View All**: The homepage shows all your notes in chronological order
 - **Edit**: Click the "✏ Edit" link on any note
 - **Delete**: Click the "🗑 Delete" link to remove a note
 - **Search**: Use the search function to find notes by title, content, or tags
 
 ### Search Tips
+
 - Search works across titles, content, and tags
 - Partial matches are supported
 - Case-insensitive searching
@@ -103,14 +108,18 @@ CREATE TABLE notes (
 ## 🎨 Customization
 
 ### Styling
+
 Modify `static/style.css` to change:
+
 - Color scheme
 - Fonts and typography
 - Layout and spacing
 - Button styles
 
 ### Features
+
 The modular Flask structure makes it easy to add:
+
 - Categories/folders
 - Rich text formatting
 - File attachments
@@ -128,6 +137,7 @@ Tags: "python, web development, flask"
 ## 🔧 Configuration
 
 ### Development Mode
+
 The app runs in debug mode by default. For production, modify:
 
 ```python
@@ -136,6 +146,7 @@ if __name__ == "__main__":
 ```
 
 ### Database Location
+
 By default, the SQLite database is created in the project root. To change the location, modify the connection string in `app.py`:
 
 ```python
@@ -152,6 +163,7 @@ conn = sqlite3.connect("/path/to/your/notes.db")
 ## 🌟 Future Enhancements
 
 Potential improvements you could add:
+
 - [ ] Markdown support for rich text
 - [ ] Note categories/folders
 - [ ] Export to PDF/HTML
@@ -197,6 +209,7 @@ This is a simple educational project, but contributions are welcome:
 ## 📞 Support
 
 For issues or questions:
+
 1. Check the troubleshooting section above
 2. Review the code comments in `app.py`
 3. Create an issue in the repository
